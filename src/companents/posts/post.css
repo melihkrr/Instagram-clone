@@ -1,0 +1,139 @@
+.post {
+  max-width: 466px;
+  margin: 30px 40px 0px 40px;
+}
+.post__header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.post__headerAuthor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bolder;
+}
+.post__time {
+  line-height: var(--base-line-clamp-line-height);
+  --base-line-clamp-line-height: 18px;
+  font-weight: 400;
+  color: grey;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+.post__avatar {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+  font-size: 12px;
+}
+.post__image > img {
+  width: 100%;
+  border-radius: 6px;
+  border: 0.6px solid rgba(128, 128, 128, 0.516);
+}
+.post__footerIcons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+.post__user {
+  font-weight: 600;
+  font-size: 14px;
+}
+.postIcon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin-top: 12px;
+  margin-right: 16px;
+}
+.postIcon img {
+  transition: filter 0.3s;
+  padding: 0;
+  cursor: pointer;
+}
+.postIcon:hover {
+  filter: invert(60%);
+  cursor: pointer;
+}
+.post__iconSave .postIcon {
+  margin-right: 0;
+}
+.post__like {
+  line-height: 18px;
+  font-size: 14px;
+  font-weight: 600px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+.post__username {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.post__likename {
+  display: flex;
+  flex-direction: row;
+  margin-top: -2px;
+}
+.post__likename .post__username:last-child {
+  margin-left: 4px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.post__userlike {
+  display: flex;
+  flex-direction: column;
+}
+.post__comments {
+  margin-top: 10px;
+  color: grey;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.post__lastdiv {
+  display: flex;
+  justify-content: space-between;
+}
+.post__lastdiv > textarea {
+  width: 100%;
+  height: 18px;
+  top: 0;
+  resize: none;
+  background: none;
+  border: none;
+  padding: 0;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+  line-height: 18px;
+}
+.post__lastdiv > textarea:focus {
+  outline: none;
+}
+.post__lastdiv > img {
+  width: 13px;
+  height: 13px;
+  margin-top: 14.8px;
+  cursor: pointer;
+}
+.post__lastdiv textarea::placeholder {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-serif	font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-mono	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+.post__border {
+  margin-top: 20px;
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: rgb(36, 36, 36);
+}
